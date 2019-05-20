@@ -1,0 +1,483 @@
+@import 'variables';
+@import 'mixins';
+@font-face{
+    src:url($italic);
+    font-family: 'italic-font'
+} 
+@font-face{
+    src:url($mont);
+    font-family: 'mont-font'
+}
+
+@font-face{
+    src:url($roboto);
+    font-family: 'roboto-font'
+}
+
+html{
+    font-size: 12px;
+}
+*,body{
+    margin: 0; 
+    padding: 0;
+}
+
+header{
+    .padd{
+        padding: 100px 0;
+    }
+  a{
+      &.logo{
+          font-size: 3rem;
+      }
+      
+  }
+  ol 
+  {
+    &.carousel-indicators{
+
+        li.active::before{
+            content: "";
+            display: block;
+            background: #f38181;
+            width: 2rem;
+            height: 0.3rem;
+        }
+        
+            
+        li{
+            width: 12rem;
+            margin-right: 8rem;
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+            
+    }
+  }
+
+      
+  ul{
+      li{
+        .active{
+            border-bottom: 1px solid white !important;
+        }
+      }
+  }
+    background-image: url($headerbg),$grad;
+    height: 100%;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'mont-font';
+  
+    .header-content{
+  
+         
+        .content{
+            h2{
+                
+                @include  typoStyle('italic-font', $size:4rem,$color:white, $weight:400)
+            }
+            h1{
+                @include  typoStyle('sans-serif', $size:9rem,$color:white, $weight:bold);
+                margin: 0 auto;
+
+                            &::after{
+                                content: "";
+                                width: 5rem;
+                                height: 0.2rem;
+                                background: white;
+                                display: block;
+                                margin: 0 auto;
+                                margin-bottom: 4rem;
+                            }
+
+            }
+            button{
+                color: white;
+                border: 1px solid white;
+                padding: 1rem 3rem;
+                @include  typoStyle('sans-serif', $size:1.5rem,$color:white, $weight:bold);
+            
+            }
+
+        }
+
+    }
+}
+.what-we-do{
+    .whatoverlay1{
+        @include overlay($what1);
+            &:hover{
+                .super-team {
+
+                    display: block;
+                }
+            }
+    }
+    .whatoverlay2{
+        @include overlay($what2);
+            &:hover{
+                .super-team {
+    
+                    display: block;
+                }
+                }
+    }
+    .whatoverlay3{
+        @include overlay($what3);
+    }
+    .super-team {
+        position: absolute;
+        right: 27%;
+        top: 12%;
+        display: none;
+    }
+    
+    h3{
+        margin-bottom: 10px;
+        @include  typoStyle('sans-serif', $size:2rem,$color:black, $weight:bold);
+
+    }
+    h5{
+        @include  typoStyle('italic-font', $size:1.5rem,$color:black, $weight:400);
+
+    }
+    .line{
+        @extend %line;
+        margin:0 auto;
+        margin-bottom: 10px
+    }
+}
+
+.statistics{
+  
+  background: $primarycolor;
+  .col-xxl-2{
+      
+      width: 20%;
+      color:white;
+      padding: 30px 0;
+  }
+}
+.Amazing-services{
+    h5{
+        @include  typoStyle('italic-font', $size:1.5rem,$color:black, $weight:400);
+
+    }
+    i{
+        font-size: 30px;
+        color: $primarycolor
+    }
+    h3{
+        margin-bottom: 10px
+
+    }
+    .line{
+        @extend %line;
+        margin:0 auto;
+        margin-bottom: 10px
+    }
+   .box{
+       .icon{
+
+           i{
+               position: absolute;
+               left: 0;
+               color:$primarycolor;
+           }
+       }
+
+   }
+}
+.unique-design{
+    h5{
+        @include  typoStyle('italic-font', $size:1.5rem,$color:black, $weight:400);
+
+    }
+    &.my-mb{
+        margin-bottom: 8rem;
+    }
+    @include  bg($unique);
+    position: relative;
+    min-height: 95vh;
+    color: white;
+    .line{
+        @extend %line;
+        margin:0 auto;
+        margin-bottom: 10px;
+    }
+
+.tablet{
+    position: absolute;
+    bottom: 0;
+    bottom: -69px;
+    left: 62%;
+
+}
+}
+.msg{
+    background: $bgcolor;
+    padding: 30px 0;
+    i{
+        color: $primarycolor;
+        border: 2px solid $primarycolor;
+        padding: 30px;
+        font-size: 20px;
+        margin-right: 40px
+    }
+    .line{
+        @extend %line;
+        display: inline-block
+    }
+    h6{
+        display: inline-block;
+    }
+}
+/*service*/
+.service{
+.line{
+
+    @extend %line;
+    display: inline-block
+}
+}
+
+
+
+/*team*/
+.team{
+    .padd{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .line{
+        @extend %line;
+        display: inline-block
+    }
+}
+/*work*/
+
+    .work{
+        h5{
+            @include  typoStyle('italic-font', $size:1.5rem,$color:black, $weight:400);
+
+        }
+        margin-bottom: 8rem;
+        .line{
+            @extend %line;
+            display: inline-block
+        }
+    .overlay1{
+        background-image: url($w1);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w1),$grad;
+            background-blend-mode: overlay;
+
+        }
+    }
+    .overlay2{
+        background-image: url($w3);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w3),$grad;
+
+    background-blend-mode: overlay;
+        }
+    }
+    .overlay3{
+        background-image: url($w2);
+        height: 100%;
+        background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w2),$grad;
+
+    background-blend-mode: overlay;
+        }
+    }
+    .overlay4{
+        background-image: url($w4);
+        height: 100%;
+        background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w4),$grad;
+
+    background-blend-mode: overlay;
+        }
+    }
+    .overlay5{
+        background-image: url($w5);
+        height: 100%;
+        background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w5),$grad;
+
+    background-blend-mode: overlay;
+        }
+    }
+    .overlay6{
+        background-image: url($w6);
+        height: 100%;
+        background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w6),$grad;
+
+    background-blend-mode: overlay;
+        }
+    }
+    .overlay7{
+        background-image: url($w7);
+        height: 100%;
+        background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        &:hover{
+            background-image: url($w7),$grad;
+
+    background-blend-mode: overlay;
+        }
+    }
+    }
+.quote{
+    div.media-left{
+        width: 20%;
+        img{
+            width: 100%;
+            padding-right: 10px
+        }
+    }
+    .line{
+        @extend %line;
+        display: inline-block
+    }
+    h6{
+        display: inline-block;
+    }
+}
+/*peoplesay*/
+.peoplesay{
+
+    @include bg($unique);
+    padding: 6rem 0;
+    h5{
+        @include  typoStyle('italic-font', $size:1.5rem,$color:black, $weight:400);
+
+    }
+ 
+    .line{
+        @extend %line;
+        display: inline-block;
+    }
+
+
+}
+/*BLOG*/
+.blog{
+    h5{
+
+        @include  typoStyle('italic-font', $size:1.5rem,$color:black, $weight:400);
+    }
+
+    .line{
+        @extend %line;
+        display: inline-block;
+    }
+    .card{
+        border: 0;
+        .card-header{
+            padding: 0;
+        }
+    }
+    .date{
+        width: 60px;
+        background: #95e1d3;
+        left:-3%;
+        position: absolute;
+        top: 125px;
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+}
+/*footer*/
+footer{
+
+    .form-control {
+        &::placeholder {
+            color: $grey;
+            font-style: italic;
+        }
+    }
+    span {
+        color: $grey;
+    }
+span{
+    &.spanfont{
+       @include typoStyle('mont-font', $size:$fontspan,$color:black, $weight:bold);
+     
+    }
+    &.roboto{
+        font-family: 'roboto-font';
+        $size:$fontspan;
+
+    }
+    i{
+        font-size: 1rem;
+    }
+    
+}
+.copyright{
+    i{
+        font-size: 1.55rem;
+    }
+}
+}
+
+@media screen and (max-width: 700px){
+    html{
+        font-size: 10px;
+
+    }
+ header{
+    .header-content .content h1{
+         font-size: 40px;
+         width: 50%;
+     }
+ }
+ 
+ .blog{
+     img{
+         width: 100%;
+     }
+ }
+    .tablets {
+        img{
+            display: none;
+        }
+    }
+    
+}
+@media screen and (min-device-width: 700px) and (max-device-width: 1124px) { 
+    html{
+        font-size: 9px;
+
+    }
+  
+}

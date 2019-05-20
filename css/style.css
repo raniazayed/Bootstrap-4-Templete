@@ -1,0 +1,390 @@
+.what-we-do .line, .Amazing-services .line, .unique-design .line, .msg .line, .service .line, .team .line, .work .line, .quote .line, .peoplesay .line, .blog .line {
+  background: #f38181;
+  width: 50px;
+  height: 2px; }
+
+@font-face {
+  src: url("../fonts/KaushanScript-Regular.ttf");
+  font-family: 'italic-font'; }
+
+@font-face {
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: 'mont-font'; }
+
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: 'roboto-font'; }
+
+html {
+  font-size: 12px; }
+
+*, body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-image: url("../images/header.jpg"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+  height: 100%;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'mont-font'; }
+  header .padd {
+    padding: 100px 0; }
+  header a.logo {
+    font-size: 3rem; }
+  header ol.carousel-indicators li.active::before {
+    content: "";
+    display: block;
+    background: #f38181;
+    width: 2rem;
+    height: 0.3rem; }
+  header ol.carousel-indicators li {
+    width: 12rem;
+    margin-right: 8rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1rem; }
+  header ul li .active {
+    border-bottom: 1px solid white !important; }
+  header .header-content .content h2 {
+    font-family: "italic-font";
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+    line-height: 6.472rem; }
+  header .header-content .content h1 {
+    font-family: "sans-serif";
+    font-size: 9rem;
+    color: white;
+    font-weight: bold;
+    line-height: 14.562rem;
+    margin: 0 auto; }
+    header .header-content .content h1::after {
+      content: "";
+      width: 5rem;
+      height: 0.2rem;
+      background: white;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 4rem; }
+  header .header-content .content button {
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 3rem;
+    font-family: "sans-serif";
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 2.427rem; }
+
+.what-we-do .whatoverlay1 {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/04/Untitled-1.jpg");
+  height: 19rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .what-we-do .whatoverlay1:hover {
+    background-blend-mode: overlay;
+    background-image: url("../images/Untitled-1.jpg"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    box-shadow: 8px 10px 5px 0px #95e1d3; }
+  .what-we-do .whatoverlay1:hover .super-team {
+    display: block; }
+
+.what-we-do .whatoverlay2 {
+  background-image: url("../images/Untitled-2.jpg");
+  height: 19rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .what-we-do .whatoverlay2:hover {
+    background-blend-mode: overlay;
+    background-image: url("../images/Untitled-2.jpg"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    box-shadow: 8px 10px 5px 0px #95e1d3; }
+  .what-we-do .whatoverlay2:hover .super-team {
+    display: block; }
+
+.what-we-do .whatoverlay3 {
+  background-image: url("../images/Untitled-3.jpg");
+  height: 19rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .what-we-do .whatoverlay3:hover {
+    background-blend-mode: overlay;
+    background-image: url("../images/Untitled-3.jpg"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    box-shadow: 8px 10px 5px 0px #95e1d3; }
+
+.what-we-do .super-team {
+  position: absolute;
+  right: 27%;
+  top: 12%;
+  display: none; }
+
+.what-we-do h3 {
+  margin-bottom: 10px;
+  font-family: "sans-serif";
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  line-height: 3.236rem; }
+
+.what-we-do h5 {
+  font-family: "italic-font";
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400;
+  line-height: 2.427rem; }
+
+.what-we-do .line {
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+.statistics {
+  background: #95e1d3; }
+  .statistics .col-xxl-2 {
+    width: 20%;
+    color: white;
+    padding: 30px 0; }
+
+.Amazing-services h5 {
+  font-family: "italic-font";
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400;
+  line-height: 2.427rem; }
+
+.Amazing-services i {
+  font-size: 30px;
+  color: #95e1d3; }
+
+.Amazing-services h3 {
+  margin-bottom: 10px; }
+
+.Amazing-services .line {
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+.Amazing-services .box .icon i {
+  position: absolute;
+  left: 0;
+  color: #95e1d3; }
+
+.unique-design {
+  background-image: url("../images/design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-height: 95vh;
+  color: white; }
+  .unique-design h5 {
+    font-family: "italic-font";
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 2.427rem; }
+  .unique-design.my-mb {
+    margin-bottom: 8rem; }
+  .unique-design .line {
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  .unique-design .tablet {
+    position: absolute;
+    bottom: 0;
+    bottom: -69px;
+    left: 62%; }
+
+.msg {
+  background: #f8f8f8;
+  padding: 30px 0; }
+  .msg i {
+    color: #95e1d3;
+    border: 2px solid #95e1d3;
+    padding: 30px;
+    font-size: 20px;
+    margin-right: 40px; }
+  .msg .line {
+    display: inline-block; }
+  .msg h6 {
+    display: inline-block; }
+
+/*service*/
+.service .line {
+  display: inline-block; }
+
+/*team*/
+.team .padd {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.team .line {
+  display: inline-block; }
+
+/*work*/
+.work {
+  margin-bottom: 8rem; }
+  .work h5 {
+    font-family: "italic-font";
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 2.427rem; }
+  .work .line {
+    display: inline-block; }
+  .work .overlay1 {
+    background-image: url("../images/w1.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay1:hover {
+      background-image: url("../images/w1.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+  .work .overlay2 {
+    background-image: url("../images/w3.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay2:hover {
+      background-image: url("../images/w3.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+  .work .overlay3 {
+    background-image: url("../images/w2.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay3:hover {
+      background-image: url("../images/w2.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+  .work .overlay4 {
+    background-image: url("../images/w4.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay4:hover {
+      background-image: url("../images/w4.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+  .work .overlay5 {
+    background-image: url("../images/w5.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay5:hover {
+      background-image: url("../images/w5.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+  .work .overlay6 {
+    background-image: url("../images/w6.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay6:hover {
+      background-image: url("../images/w6.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+  .work .overlay7 {
+    background-image: url("../images/w7.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .work .overlay7:hover {
+      background-image: url("../images/w7.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+      background-blend-mode: overlay; }
+
+.quote div.media-left {
+  width: 20%; }
+  .quote div.media-left img {
+    width: 100%;
+    padding-right: 10px; }
+
+.quote .line {
+  display: inline-block; }
+
+.quote h6 {
+  display: inline-block; }
+
+/*peoplesay*/
+.peoplesay {
+  background-image: url("../images/design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6rem 0; }
+  .peoplesay h5 {
+    font-family: "italic-font";
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 2.427rem; }
+  .peoplesay .line {
+    display: inline-block; }
+
+/*BLOG*/
+.blog h5 {
+  font-family: "italic-font";
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400;
+  line-height: 2.427rem; }
+
+.blog .line {
+  display: inline-block; }
+
+.blog .card {
+  border: 0; }
+  .blog .card .card-header {
+    padding: 0; }
+
+.blog .date {
+  width: 60px;
+  background: #95e1d3;
+  left: -3%;
+  position: absolute;
+  top: 125px; }
+  .blog .date h3 {
+    font-size: 2.5rem; }
+
+/*footer*/
+footer .form-control::placeholder {
+  color: #495057;
+  font-style: italic; }
+
+footer span {
+  color: #495057; }
+
+footer span.spanfont {
+  font-family: "mont-font";
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  line-height: 2.427rem; }
+
+footer span.roboto {
+  font-family: 'roboto-font'; }
+
+footer span i {
+  font-size: 1rem; }
+
+footer .copyright i {
+  font-size: 1.55rem; }
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 10px; }
+  header .header-content .content h1 {
+    font-size: 40px;
+    width: 50%; }
+  .blog img {
+    width: 100%; }
+  .tablets img {
+    display: none; } }
+
+@media screen and (min-device-width: 700px) and (max-device-width: 1124px) {
+  html {
+    font-size: 9px; } }
